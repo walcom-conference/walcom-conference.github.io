@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>International Conference and Workshops on Algorithms and Computation (WALCOM)</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	 	
+	
+	</head>
+	
+	<body   >		
+
+		<header id="header">
+			<div class="innertube" align=center style="color:darkgreen">
+				<h2>International Conference and Workshops on Algorithms and Computation</h2> <h1>WALCOM</h1>
+			</div>
+		</header>
+		
+		<div id="wrapper">
+		
+			<main>
+				<div id="content">
+					<div class="innertube">
+
+<h2>Proceedings</h2>
+<p  align="justify">
+<ul>
+  <li><a href="http://saidurrahman.buet.ac.bd/walcom2007/" target="_blank">WALCOM 2007</a"><a style='padding-left: 10px;' href="citations_2007.php">citations(13.92)</a></li>
+  <li><a href="http://www.springer.com/us/book/9783540778905" target="_blank">WALCOM 2008</a"><a style='padding-left: 10px;' href="citations_2008.php">citations(8.0)</a></li>
+  <li><a href="http://www.springer.com/gp/book/9783642002014" target="_blank">WALCOM 2009</a><a style='padding-left: 10px;' href="citations_2009.php">citations(21.47)</a></li>
+  <li><a href="http://link.springer.com/book/10.1007%2F978-3-642-11440-3" target="_blank">WALCOM 2010</a><a style='padding-left: 10px;' href="citations_2010.php">citations(14.77)</a></li>
+  <li><a href="http://www.springer.com/gp/book/9783642190933" target="_blank">WALCOM 2011</a><a style='padding-left: 10px;' href="citations_2011.php">citations(7.52)</a></li>
+  <li><a href="http://www.springer.com/us/book/9783642280757" target="_blank">WALCOM 2012</a><a style='padding-left: 10px;' href="citations_2012.php">citations(7.78)</a></li>
+  <li><a href="http://www.springer.com/gp/book/9783642360640?referer=www.springeronline.com" target="_blank">WALCOM 2013</a><a style='padding-left: 10px;' href="citations_2013.php">citations(6.45)</a></li>
+  <li><a href="http://link.springer.com/book/10.1007%2F978-3-319-04657-0" target="_blank">WALCOM 2014</a><a style='padding-left: 10px;' href="citations_2014.php">citations(6.0)</a></li>
+  <li><a href="http://www.springer.com/gp/book/9783319156118" target="_blank">WALCOM 2015</a><a style='padding-left: 10px;' href="citations_2015.php">citations(4.74)</a></li>
+  <li><a href="http://www.springer.com/us/book/9783319301389" target="_blank">WALCOM 2016</a><a style='padding-left: 10px;' href="citations_2016.php">citations(4.89)</a></li>
+  <li><a href="https://www.springer.com/gp/book/9783319539249" target="_blank">WALCOM 2017</a><a style='padding-left: 10px;' href="citations_2017.php">citations(4.77)</a></li>
+  <li><a href="https://www.springer.com/gp/book/9783319751719" target="_blank">WALCOM 2018</a><a style='padding-left: 10px;' href="citations_2018.php">citations(2.09)</a></li>
+  <li><a href="https://www.springer.com/gp/book/9783030105631" target="_blank">WALCOM 2019</a><a style='padding-left: 10px;' href="citations_2019.php">citations(1.93)</a></li>
+  <li><a href="https://www.springer.com/gp/book/9783030398804" target="_blank">WALCOM 2020</a><a style='padding-left: 10px;' href="citations_2020.php">citations(0.7)</a></li>
+  <li>Total citations: 2817(7.31)</li>
+</ul>
+</p>
+
+					</div>
+				</div>
+			</main>
+			
+			<nav id="nav">
+				<script>
+					fetch('sidebar.html')
+					.then(response => response.text())
+					.then(html => {
+					document.getElementById('nav').innerHTML = html;
+					// Now generate the list
+					const ul = document.getElementById('history-list');
+					for (let i = 2025; i >= 2007; i--) {
+					const li = document.createElement('li');
+					const a = document.createElement('a');
+					//a.href = 'walcom' + i + '.php';
+					a.href = '#';
+					a.textContent = 'WALCOM ' + i;
+					li.appendChild(a);
+					ul.appendChild(li);
+					}
+					});
+				</script>
+			</nav>
+		
+		</div>
+		
+		<footer id="footer">
+			<div class="innertube">
+				<p>@WALCOM</p>
+			</div>
+		</footer>
+	
+	</body>
+</html>
