@@ -32,58 +32,13 @@
 			</main>
 			
 			<nav id="nav">
-				<div class="innertube">
-					<h3>WALCOM</h3>
-					<ul>
-						<li><a href="http://walcom-conference.org/index.php">About WALCOM</a></li> 
-						<li><a href="http://walcom-conference.org/upcoming.php">Upcoming WALCOM</a></li>
-						<li><a href="http://walcom-conference.org/advisory_board.php">Advisory Board</a></li>
-						<li><a href="http://walcom-conference.org/steering_committee.php">Steering Committee</a></li>
-						<li><a href="http://walcom-conference.org/summary.php">WALCOM summary</a></li>
-						<li><a href="http://walcom-conference.org/proceedings.php">Proceedings</a></li>
-						<li><a href="http://walcom-conference.org/bylaws.php">Bylaws</a></li>
-						<li><a href="http://walcom-conference.org/past_steering_committee.php">Past SC Members</a></li>
-						<li><a href="http://walcom-conference.org/in_memoriam.php">In Memoriam</a></li>
-						<!--<li><a href="summary.php">WALCOM summary</a></li>-->
-						
-					</ul>
-				
-					<h3>WALCOM Fun</h3>
-					<ul>
-						<li><a href="http://walcom-conference.org/author_list.php">Author List</a></li>
-						<!--<li><a href="open_problems.php">Open problems</a></li>-->
-						<li><a href="http://walcom-conference.org/graph_gallery.php">Graph gallery</a></li>
-						<li><a href="http://walcom-conference.org/walcom_photo_gallery.php">WALCOM photo gallery</a></li>
-					</ul>
-
-<h3>WALCOM Contact</h3>
-					<ul>
-						<li><a href="http://walcom-conference.org/contact.php">Contact Us</a></li>
-						<!--<li><a href="submit_open_problems.php">Submit open problem</a></li>-->
-						
-					</ul>
-
-
-	<h3>WALCOM history</h3>
-					<ul>
-						<script language="JavaScript">
-<!-- 
-
- 
-for(i = 2025; i >= 2007; i--){
-   document.write('<li><a href="walcom'+i+'.php">WALCOM '+i+'</a></li>');
- 
-}
-
- 
-
-//-->
-</script><li><a href="http://walcom-conference.org/walcom2025.php">WALCOM 2025</a></li><li><a href="http://walcom-conference.org/walcom2024.php">WALCOM 2024</a></li><li><a href="http://walcom-conference.org/walcom2023.php">WALCOM 2023</a></li><li><a href="http://walcom-conference.org/walcom2022.php">WALCOM 2022</a></li><li><a href="http://walcom-conference.org/walcom2021.php">WALCOM 2021</a></li><li><a href="http://walcom-conference.org/walcom2020.php">WALCOM 2020</a></li><li><a href="http://walcom-conference.org/walcom2019.php">WALCOM 2019</a></li><li><a href="http://walcom-conference.org/walcom2018.php">WALCOM 2018</a></li><li><a href="http://walcom-conference.org/walcom2017.php">WALCOM 2017</a></li><li><a href="http://walcom-conference.org/walcom2016.php">WALCOM 2016</a></li><li><a href="http://walcom-conference.org/walcom2015.php">WALCOM 2015</a></li><li><a href="http://walcom-conference.org/walcom2014.php">WALCOM 2014</a></li><li><a href="http://walcom-conference.org/walcom2013.php">WALCOM 2013</a></li><li><a href="http://walcom-conference.org/walcom2012.php">WALCOM 2012</a></li><li><a href="http://walcom-conference.org/walcom2011.php">WALCOM 2011</a></li><li><a href="http://walcom-conference.org/walcom2010.php">WALCOM 2010</a></li><li><a href="http://walcom-conference.org/walcom2009.php">WALCOM 2009</a></li><li><a href="http://walcom-conference.org/walcom2008.php">WALCOM 2008</a></li><li><a href="http://walcom-conference.org/walcom2007.php">WALCOM 2007</a></li>
- 
-					</ul>
-
-
-				</div>
+				  <script>
+					fetch('sidebar.html')
+					.then(response => response.text())
+					.then(html => {
+					document.getElementById('nav').innerHTML = html;
+					});
+				</script>
 			</nav>
 		
 		</div>
