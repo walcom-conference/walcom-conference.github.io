@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>International Conference and Workshops on Algorithms and Computation (WALCOM)</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	 	
+	
+	</head>
+	
+	<body   >		
+
+		<header id="header">
+			<div class="innertube" align=center style="color:darkgreen">
+				<h2>International Conference and Workshops on Algorithms and Computation</h2> <h1>WALCOM</h1>
+			</div>
+		</header>
+		
+		<div id="wrapper">
+		
+			<main>
+				<div id="content">
+					<div class="innertube">
+						<h2>Advisory Board</h2>
+						<p  align="justify">
+
+<!--<ul>
+	<li>Kyung-Yong Chwa (KAIST, Korea)</li>
+	<li>Costas S. Iliopoulos (KCL, UK)</li>
+	<li>M. Kaykobad (BUET, Bangladesh)</li>
+	<li>Petra Mutzel (TU Dortmund, Germany)</li>
+	<li>Shin-ichi Nakano (Gunma University, Japan)</li>
+	<li>Subhas Chandra Nandy (Indian Statistical Institute, Kolkata, India)</li>
+	<li>Takao Nishizeki (Tohoku University, Japan)</li>
+	<li>C. Pandu Rangan (IIT, Madras, India)</li>
+	<li>Md. Saidur Rahman (BUET, Bangladesh)</li>
+</ul>-->
+<table>
+
+
+<tr>
+<td><img src="./images/kaykobad.jpg" alt="M. Kaykobad" width="126px"></td>
+<td>
+<h2>M. Kaykobad</h2>
+(BUET, Bangladesh)
+</td>
+</tr>
+
+
+
+<tr>
+<td><img src="./images/pandu.gif" alt="C. Pandu Rangan" width="126px"></td>
+<td>
+<h2>C. Pandu Rangan</h2>
+(IIT, Madras, India)
+</td>
+</tr>
+</table>
+</p>
+
+
+					</div>
+				</div>
+			</main>
+			
+			<nav id="nav">
+				<script>
+					fetch('sidebar.html')
+					.then(response => response.text())
+					.then(html => {
+					document.getElementById('nav').innerHTML = html;
+					// Now generate the list
+					const ul = document.getElementById('history-list');
+					for (let i = 2025; i >= 2007; i--) {
+					const li = document.createElement('li');
+					const a = document.createElement('a');
+					//a.href = 'walcom' + i + '.php';
+					a.href = '#';
+					a.textContent = 'WALCOM ' + i;
+					li.appendChild(a);
+					ul.appendChild(li);
+					}
+					});
+				</script>
+			</nav>
+		
+		</div>
+		
+		<footer id="footer">
+			<div class="innertube">
+				<p>@WALCOM</p>
+			</div>
+		</footer>
+	
+	</body>
+</html>
