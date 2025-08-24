@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>International Conference and Workshops on Algorithms and Computation (WALCOM)</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	 	
+	
+	</head>
+	
+	<body   >		
+
+		<header id="header">
+			<div class="innertube" align=center style="color:darkgreen">
+				<h2>International Conference and Workshops on Algorithms and Computation</h2> <h1>WALCOM</h1>
+			</div>
+		</header>
+		
+		<div id="wrapper">
+		
+			<main>
+				<div id="content">
+					<div class="innertube">
+						<h2>Steering Committee</h2>
+						<p  align="justify">
+
+<!--<ul>
+	<li>Costas S. Iliopoulos (KCL, UK)</li>
+	<li>Petra Mutzel (TU Dortmund, Germany)</li>
+	<li>Shin-ichi Nakano (Gunma University, Japan)</li>
+	<li>Subhas Chandra Nandy (Indian Statistical Institute, Kolkata, India)</li>
+	<li>Md. Saidur Rahman (BUET, Bangladesh)</li>
+</ul>-->
+<table>
+<tr>
+<td><img src="./images/tamal_dey.jpg" alt="Tamal Dey" width="126px"></td>
+<td>
+<h2>Tamal Dey </h2>
+(Purdue University, USA)
+</td>
+</tr>
+
+<tr>
+<td><img src="./images/seok_hee.jpg" alt="Seok-Hee Hong" width="126px"></td>
+<td>
+<h2>Seok-Hee Hong  </h2>
+(University of Sydney, Australia)
+</td>
+</tr>
+
+
+
+
+<tr>
+<td><img src="./images/beppe.jpg" alt="Giuseppe Liotta" width="126px"></td>
+<td>
+<h2>Giuseppe Liotta  </h2>
+(University of Perugia, Italy)
+</td>
+</tr>
+
+<tr>
+<td><img src="./images/img_6065pmausschnitt.jpg" alt="Petra Mutzel" width="126px"></td>
+<td>
+<h2>Petra Mutzel</h2>
+(University of Bonn, Germany)
+</td>
+</tr>
+
+<tr>
+<td><img src="./images/s200_shinichi.nakano.jpg" alt="Shin-ichi Nakano" width="126px"></td>
+<td>
+<h2>Shin-ichi Nakano</h2>
+(Gunma University, Japan)
+</td>
+</tr>
+
+<tr>
+<td><img src="./images/subhas.jpg" alt="Subhas Chandra Nandy" width="126px"></td>
+<td>
+<h2>Subhas Chandra Nandy</h2>
+(Indian Statistical Institute, Kolkata, India)
+</td>
+</tr>
+
+
+
+
+<tr>
+<td><img src="./images/saidphoto.gif" alt="Md. Saidur Rahman" width="126px"></td>
+<td>
+<h2>Md. Saidur Rahman</h2>
+(BUET, Bangladesh)
+</td>
+</tr>
+
+<tr>
+<td><img src="./images/uehara.jpg" alt="Ryuhei Uehara" width="126px"></td>
+<td>
+<h2>Ryuhei Uehara  </h2>
+(Japan Advanced Institute of Science and Technology, Japan)
+</td>
+</tr>
+
+</table>
+</p>
+					</div>
+				</div>
+			</main>
+			
+			<nav id="nav">
+				<script>
+					fetch('sidebar.html')
+					.then(response => response.text())
+					.then(html => {
+					document.getElementById('nav').innerHTML = html;
+					// Now generate the list
+					const ul = document.getElementById('history-list');
+					for (let i = 2025; i >= 2007; i--) {
+					const li = document.createElement('li');
+					const a = document.createElement('a');
+					//a.href = 'walcom' + i + '.php';
+					a.href = '#';
+					a.textContent = 'WALCOM ' + i;
+					li.appendChild(a);
+					ul.appendChild(li);
+					}
+					});
+				</script>
+			</nav>
+		
+		</div>
+		
+		<footer id="footer">
+			<div class="innertube">
+				<p>@WALCOM</p>
+			</div>
+		</footer>
+	
+	</body>
+</html>
