@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>International Conference and Workshops on Algorithms and Computation (WALCOM)</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<style>
+		table {
+		    border-collapse: collapse;
+		}
+
+		th {
+		    text-align: left;
+		}
+		</style>
+	 	
+	
+	</head>
+	
+	<body   >		
+
+		<header id="header">
+			<div class="innertube" align=center style="color:darkgreen">
+				<h2>International Conference and Workshops on Algorithms and Computation</h2> <h1>WALCOM</h1>
+			</div>
+		</header>
+		
+		<div id="wrapper">
+		
+			<main>
+				<div id="content">
+					<div class="innertube">
+						<h2>WALCOM summary</h2>
+						<p  align="justify">
+
+WALCOM is an initialism for <strong>W</strong>orkshop on <strong>Al</strong>gorithms and <strong>Com</strong>putation. It is an annual conference series on all aspects of algorithms and computation. Since its inception in 2007, it has been being held as a yearly event. WALCOM has grown substantially in reputation and has been able to attract researchers and scientists around the globe. <!--WALCOM 2015 is organized in cooperation with IEICE technical Committee on Theoretical Foundations of Computing (COMP) and the Special Interest Group for Algorithms (SIGAL) of the Information Processing Society of Japan (IPSJ). WALCOM 2016 will be held in Kathmandu, Nepal during March 29-31, 2016.--> Walcom has established itself as a fully refereed conference for theoretical computer science research in Asia. It has also strengthened the ties between local and international scientific communities. The first Workshop on Algorithms and Computation (WALCOM 2007) was held on February 12, 2007 in Dhaka, Bangladesh and was organized by Bangladesh Academy of Sciences. WALCOM 2008, WALCOM 2010, WALCOM 2012, WALCOM 2015 and WALCOM 2018 were held in Bangladesh; whereas WALCOM 2009, WALCOM 2011, WALCOM 2013, WALCOM 2014 and WALCOM 2019 were held in India. WALCOM 2016 was held in Nepal WALCOM 2017 and WALCOM 2023 were held in Taiwan, WALCOM 2020 was held in Singapore. WALCOM 2021 was held fully online and was conducted by Myanmar and Japan. WALCOM 2022 was held in Indonesia in Hybrid mode. The name of this conference has been changed as Conference and Workshops on Algorithms and Computation since WALCOM 2017. The 18th International Conference and Workshops on Algorithms and Computation (WALCOM 2024) will be held in Kanazawa, Japan during March 18- March 20, 2024. The 19th International Conference and Workshops on Algorithms and Computation (WALCOM 2025) was held in Chengdu, China during February 28 to March 02, 2025.The 20th International Conference and Workshops on Algorithms and Computation (WALCOM 2026)  will be held in Perugia, Italy, from March 4 to 6, 2026. 
+
+</p>
+					</div>
+				</div>
+			</main>
+			
+			<nav id="nav">
+				<script>
+					fetch('sidebar.html')
+					.then(response => response.text())
+					.then(html => {
+					document.getElementById('nav').innerHTML = html;
+					// Now generate the list
+					const ul = document.getElementById('history-list');
+					for (let i = 2025; i >= 2007; i--) {
+					const li = document.createElement('li');
+					const a = document.createElement('a');
+					//a.href = 'walcom' + i + '.php';
+					a.href = '#';
+					a.textContent = 'WALCOM ' + i;
+					li.appendChild(a);
+					ul.appendChild(li);
+					}
+					});
+				</script>
+			</nav>
+		
+		</div>
+		
+		<footer id="footer">
+			<div class="innertube">
+				<p>@WALCOM</p>
+			</div>
+		</footer>
+	
+	</body>
+</html>
