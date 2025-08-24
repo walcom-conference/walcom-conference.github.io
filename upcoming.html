@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>International Conference and Workshops on Algorithms and Computation (WALCOM)</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	 	
+	
+	</head>
+	
+	<body   >		
+
+		<header id="header">
+			<div class="innertube" align=center style="color:darkgreen">
+				<h2>International Conference and Workshops on Algorithms and Computation</h2> <h1>WALCOM</h1>
+			</div>
+		</header>
+		
+		<div id="wrapper">
+		
+			<main>
+				<div id="content">
+					<div class="innertube">
+						<h2>Upcoming WALCOM</h2>
+						<p  align="justify">
+
+WALCOM is an annual conference series on all aspects of algorithms and computation. Since its inception in 2007, it has been held as a yearly event. The 20th International Conference and Workshops on Algorithms and Computation (WALCOM 2026)  will be held in Perugia, Italy, from March 4 to 6, 2026. 
+<br>
+<br>
+<h2>WALCOM 2026:</h2><a href="https://mozart.diei.unipg.it/walcom2026" target="_blank">https://mozart.diei.unipg.it/walcom2026</a>
+</p>
+
+
+
+
+					</div>
+				</div>
+			</main>
+			
+			<nav id="nav">
+				<script>
+					fetch('sidebar.html')
+					.then(response => response.text())
+					.then(html => {
+					document.getElementById('nav').innerHTML = html;
+					// Now generate the list
+					const ul = document.getElementById('history-list');
+					for (let i = 2025; i >= 2007; i--) {
+					const li = document.createElement('li');
+					const a = document.createElement('a');
+					//a.href = 'walcom' + i + '.php';
+					a.href = '#';
+					a.textContent = 'WALCOM ' + i;
+					li.appendChild(a);
+					ul.appendChild(li);
+					}
+					});
+				</script>
+			</nav>
+		
+		</div>
+		
+		<footer id="footer">
+			<div class="innertube">
+				<p>@WALCOM</p>
+			</div>
+		</footer>
+	
+	</body>
+</html>
