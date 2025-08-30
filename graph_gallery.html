@@ -4,6 +4,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>International Conference and Workshops on Algorithms and Computation (WALCOM)</title>
 		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script src="script.js"></script>
 		<!-- it works the same with all jquery version from 1.x to 2.x -->
     <script type="text/javascript" src="./js/jquery-1.9.1.min.js"></script>
     <!-- use jssor.slider.mini.js (40KB) instead for release -->
@@ -345,17 +346,7 @@
 					.then(response => response.text())
 					.then(html => {
 					document.getElementById('nav').innerHTML = html;
-					// Now generate the list
-					const ul = document.getElementById('history-list');
-					for (let i = 2025; i >= 2007; i--) {
-					const li = document.createElement('li');
-					const a = document.createElement('a');
-					//a.href = 'walcom' + i + '.php';
-					a.href = '#';
-					a.textContent = 'WALCOM ' + i;
-					li.appendChild(a);
-					ul.appendChild(li);
-					}
+					generate_list();
 					});
 				</script>
 			</nav>
